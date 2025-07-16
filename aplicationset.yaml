@@ -1,17 +1,17 @@
 #apiVersion: argoproj.io/v1alpha1
 #kind: Application
 #metadata:
- #name: encuestapp-dev
+ #name: prueba-dev
   #namespace: argocd
 #spec:
   #project: default
   #source:
-    #repoURL: https://github.com/nimbusops1/k8s.git
+    #repoURL: https://github.com/RocioMagnoni/prueba-k8s-cloud.git
     #targetRevision: main      #rama principal donde estan los archivos
     #path: .                   #es el directorio donde esta deployment.yaml en la carpeta k8s de github
   #destination:
     #server: https://kubernetes.default.svc
-    #namespace: ambiente-dev-encuestapp #el nombre del namespace que va a crear dentro del cluster
+    #namespace: ambiente-dev-prueba #el nombre del namespace que va a crear dentro del cluster
   #syncPolicy:
     #automated:
       #prune: true
